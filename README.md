@@ -18,8 +18,8 @@ If you're running into trouble running uniqurl, please drop me an issue and I'll
 
 # Usage
 ```
-usage: uniqurl [-h] [-headers <headers>] [-cookies <cookies>] [-proxy <proxy>] [-redirect <boolean>] [-timeout <seconds>]
-[-workers <workers>]
+usage: uniqurl [-h] [-headers <headers>] [-cookies <cookies>] [-proxy <proxy>] [-redirect <boolean>] 
+[-timeout <seconds>] [-workers <workers>]
 
 Use uniqurl to distinguish unique URLs based on the MD5 hash of the content of the page.
 
