@@ -21,7 +21,7 @@ If you're running into trouble running uniqurl, please drop me an issue and I'll
 usage: uniqurl [-h] [-headers <headers>] [-cookies <cookies>] [-proxy <proxy>] [-redirect <boolean>] 
 [-timeout <seconds>] [-workers <workers>]
 
-Use uniqurl to distinguish unique URLs based on the MD5 hash of the content of the page.
+Use uniqurl to distinguish unique URLs based on the MD5 hash of the content of the page. This script uses URLs as input.
 
 optional arguments:
   -h, --help           show this help message and exit
@@ -34,10 +34,19 @@ optional arguments:
 ```
 
 # Examples
-To get only unique URLs by [hakrawler](https://github.com/hakluke/hakrawler) just run:
+To get only unique URLs by [hakrawler](https://github.com/hakluke/hakrawler) just run (don't forget '-plain' in the command):
 ```
 hakrawler -url google.com -plain|uniqurl
 ```
 
+Want to pass the URLs from [waybackurls](https://github.com/tomnomnom/waybackurls), 5 at a time to uniqurl?
+```
+cat waybackurls.txt |uniqurl --workers 5
+```
+
+If you have a list of URLs, you can throw it at uniqurl, for example through a proxy:
+```
+cat urls.txt|uniqurl --proxies http://127.0.0.1:8080
+```
 # Contribute?
 Do you have some usefull additions to the script, please send in a pull request to help make this script better :)
