@@ -19,7 +19,7 @@ def GetRequest(sUrl,sHeaders, sCookies, sProxies):
         return False
 
 # Get some commandline arguments:
-sArgParser=argparse.ArgumentParser(description='Use uniqurl to distinguish unique URLs based on the MD5 hash of the content of the page.')
+sArgParser=argparse.ArgumentParser(description='Use uniqurl to distinguish unique URLs based on the MD5 hash of the content of the page. This script uses URLs as input.')
 sArgParser.add_argument('-headers', metavar="<headers>", help='Supply header to a GET request.', default=None)
 sArgParser.add_argument('-cookies', metavar="<cookies>", help='Supply cookie to a GET request.', default=None)
 sArgParser.add_argument('-proxy', metavar="<proxy>", help='Supply a proxy to a GET request.', default=None)
