@@ -49,4 +49,6 @@ If you have a list of URLs, you can throw it at uniqurl, for example through a p
 cat urls.txt|uniqurl --proxies http://127.0.0.1:8080
 ```
 # Contribute?
-Do you have some usefull additions to the script, please send in a pull request to help make this script better :)
+Do you have some usefull additions to the script, please send in a pull request to help make this script better or contact me @ [Twitter](https://twitter.com/zarcolio) :)
+
+
